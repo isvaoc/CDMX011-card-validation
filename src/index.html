@@ -4,11 +4,58 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div id="dbienv">
+        <p id="bienv">Bienvenido &nbsp; a</p>
+      </div>
+      <div id="dtestcard">
+        <p id="testcard">TestCard</p>
+      </div>
+      <div id="dslogan">
+        <p id="slogan">¡ La App más eficaz para verificar tu tarjeta de crédito !</p>
+      </div>
+    </header>
+    <main>
+      <div class="bg-image"></div>
+
+      <div id="divBienvenida">
+        <h2>Introduce los dígitos de la tarjeta que desees verificar</h2>
+        <h5>(sin espacios en blanco ni guiones)</h5>
+        <form>
+        <input type="text" id="digito" name="digito" placeholder="Digita aquí los números" autocomplete="off" required><br>
+        </form>
+        <button class="boton1" id="boton1">Verificar</button>
+      </div>
+
+      <div id="divValid">
+        <h2>Felicidades, la tarjeta de crédito</h2>
+        <p class="digcard" id="vdigcard">XXXXXXXXXXXX1234</p>
+        <h2>es válida</h2>
+        <button class="boton2" id="boton2">Probar nueva tarjeta</button>
+      </div>
+
+      <div id="divInvalid">
+        <h2>Lo sentimos, la tarjeta de crédito</h2>
+        <p class="digcard" id="idigcard">XXXXXXXXXXXX1234</p>
+        <h2><strong id="nof"> no </strong> es válida</h2>
+        <button class="boton2" id="boton3">Probar nueva tarjeta</button>
+      </div>
+
+    </main>
+    <footer>
+      <p>No compartas con nadie tu información bancaria, podrías ser víctima de una estafa</p>
+      <p>-- Esta aplicación web no almacena de ningún modo la información de tu tarjeta de crédito --</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
